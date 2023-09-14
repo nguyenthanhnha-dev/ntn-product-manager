@@ -32,6 +32,15 @@ dependencies {
   /* Flyway for database migration */
   implementation 'org.flywaydb:flyway-core'
 	implementation 'org.postgresql:postgresql:42.6.0' /* Flyway doesn't support reactive yet */
+	
+	/* For documenting REST APIs 
+		 API Doc (json) http://localhost:9001/v3/api-docs
+		 API Doc (yaml) http://localhost:9001/v3/api-docs.yaml
+		 Swagger UI: http://localhost:9001/swagger-ui.html
+	*/
+	implementation 'org.springdoc:springdoc-openapi-starter-common:2.2.0'
+	implementation 'org.springdoc:springdoc-openapi-starter-webflux-ui:2.2.0'
+	
 }
 
 tasks.named('test') {

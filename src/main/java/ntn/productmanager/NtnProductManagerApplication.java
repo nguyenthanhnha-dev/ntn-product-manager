@@ -9,8 +9,6 @@ import org.springframework.data.r2dbc.config.EnableR2dbcAuditing;
 import org.springframework.web.reactive.config.EnableWebFlux;
 
 @SpringBootApplication
-@EnableWebFlux
-@EnableR2dbcAuditing
 public class NtnProductManagerApplication {
 	
 	private static Logger logger = LoggerFactory.getLogger(NtnProductManagerApplication.class);
