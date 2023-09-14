@@ -28,6 +28,10 @@ dependencies {
 	/* MapStruct */
 	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
   annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+  
+  /* Flyway for database migration */
+  implementation 'org.flywaydb:flyway-core'
+	implementation 'org.postgresql:postgresql:42.6.0' /* Flyway doesn't support reactive yet */
 }
 
 tasks.named('test') {

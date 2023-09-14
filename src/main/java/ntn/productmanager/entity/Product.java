@@ -14,12 +14,12 @@ public record Product(
 	@NotNull(message = "Name is requied")
 	String name,
 	
-	@NotNull
-	String code,
-	
 	@NotNull(message = "Price is required")
 	@Positive(message = "Price must be greater than 0")
 	Double price,
+	
+	@NotNull
+	String categoryId,
 	
 	@Version
 	int version
