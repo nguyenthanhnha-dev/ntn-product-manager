@@ -1,0 +1,17 @@
+server:
+ port: 9001
+ shutdown: graceful
+ netty:
+  connection-timeout: 2s
+  idle-timeout: 15s
+spring:
+ application:
+  name: ntn-product-manager
+ r2dbc:
+  username: user
+  password: password
+  url: r2dbc:postgresql://localhost:5432/ntn_product_manager
+  pool:
+   max-create-connection-time: 2s 
+   initial-size: 5 
+   max-size: 10 
